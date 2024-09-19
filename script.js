@@ -1,9 +1,9 @@
 //your JS code here. If required
-document.getElementById('removebutton').addEventListener('click', () => {
+document.getElementById('removeButton').addEventListener('click', () => {
 	const colorSelect = document.getElementById('colorSelect');
-	const selectIndex = colorSelect.selectIndex;
-	if(selectIndex !== -1) {
-		colorSelect.remove(selectIndex);
+	const selectedIndex = colorSelect.selectedIndex;
+	if(selectedIndex !== -1) {
+		colorSelect.remove(selectedIndex);
 	}
 	else {
 		alert('Please Select a color to remove');
